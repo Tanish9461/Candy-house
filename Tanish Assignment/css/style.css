@@ -1,0 +1,300 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+
+    margin: 0px;
+    font-family: serif;
+}
+
+/* header */
+.header {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #f7aea6;
+    overflow: hidden;
+    text-align: center;
+}
+
+.navbar a {
+    display: inline-block;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+
+}
+
+.navbar a:hover {
+    background-color: rgba(0, 0, 0, 0.432);
+
+}
+
+
+
+/**********************************
+Home
+************************************/
+.home {
+    background: url(../images/home.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+    display: flex;
+}
+
+.home>.box {
+    max-width: 80%;
+    margin: auto;
+    padding: 20px;
+    background-color: rgba(240, 248, 255, 0.322);
+}
+
+.home .heading {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/*********************************
+ about us
+ ******************************** */
+
+.about {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.image-box {
+    width: 45%;
+}
+
+.image-box img {
+    width: 100%;
+}
+
+.content {
+    width: 48%;
+    margin-top: 20px;
+    text-align: center;
+    text-align: left;
+    background: linear-gradient(to top, #ffffff, #ebcab1)#c06e2f;
+    padding: 10px;
+}
+
+/******************
+Gallery
+***********************/
+.gallery-title {
+    text-align: center;
+    color: #f7aea6;
+}
+
+.gallery-items {
+    margin: auto;
+    max-width: 960px;
+    display: flex;
+}
+
+
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    width: 200px;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+/* Get in touch form */
+.contact-us {
+    max-width: 650px;
+    margin: auto;
+    text-align: center;
+}
+
+.title h2 {
+    color: #f7aea6;
+}
+
+form input {
+    width: 80%;
+    margin-bottom: 10px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid rgb(212, 208, 208);
+    padding-left: 20px;
+}
+
+form textarea {
+    width: 80%;
+    border-radius: 5px;
+    border: 1px solid rgb(212, 208, 208);
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+form .btn {
+    width: 80%;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f7aea6;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    border: 1px solid rgb(212, 208, 208);
+}
+
+form .btn:hover {
+    color: #f7aea6;
+    background-color: white;
+    cursor: pointer;
+    border: 1px solid #f7aea6;
+    transform: scale(1.1);
+}
+
+
+
+
+/****************************************
+Footer
+*****************************************/
+#footer {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    background-color: #f7aea6;
+}
+
+#footer .logo {
+    padding: 50px;
+    width: 25%;
+}
+
+#footer .quick-form {
+    padding: 50px;
+    width: 25%;
+}
+
+#footer button {
+    width: 80%;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: white;
+    color: #f7aea6;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#footer .quick-links {
+    padding: 50px;
+    width: 25%;
+}
+
+#footer .quick-links a {
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+    text-decoration: underline;
+    padding-top: 10px;
+}
+
+#footer .social-links {
+    padding: 50px;
+    width: 25%;
+}
+
+
+#footer .social-links a img {
+    height: 40PX;
+    padding-left: 20px;
+}
+
+
+
+
+
+/****************************************************
+
+Responsivenesss
+
+******************************************************/
+
+/* navbar */
+@media (max-width: 700px) {
+
+    /* navbar */
+    .navbar a {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+
+    /* about */
+
+    .about {
+        flex-direction: column;
+    }
+
+    .image-box {
+        width: 100%;
+    }
+
+    .content {
+        width: 100%;
+        text-align: left;
+    }
+
+    /* Gallery */
+    .gallery-items {
+        flex-direction: column;
+    }
+
+    div.gallery {
+
+        margin: auto;
+        border: 1px solid #ccc;
+        width: 300px;
+    }
+
+    /* Footer */
+    #footer {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        background-color: #f7aea6;
+    }
+
+    #footer .logo {
+        width: 100%;
+    }
+
+    #footer .quick-form {
+        width: 100%;
+    }
+
+    #footer .quick-links {
+        width: 100%;
+    }
+
+    #footer .social-links {
+        width: 100%;
+    }
+}
